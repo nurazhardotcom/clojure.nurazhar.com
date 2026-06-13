@@ -124,6 +124,43 @@ If you are coming from a Debian-based (Ubuntu, Mint) or Red Hat-based (Fedora, R
 * **Simplicity**: Arch's `PKGBUILD` is a single, readable Bash script. Debian and Red Hat packages require complex build directories and specialized spec/rule syntaxes.
 * **Optimization**: Debian and RHEL prioritize stability and compatibility, targeting generic, older `x86-64` hardware. CachyOS rebuilds everything specifically to leverage modern CPU instructions.
 
+### Visual Comparison: AUR vs. PPA/COPR Build Models
+
+```mermaid
+flowchart TD
+    %% Custom Styling
+    classDef arch fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#cdd6f4;
+    classDef debian fill:#1e1e2e,stroke:#f38ba8,stroke-width:2px,color:#cdd6f4;
+    classDef compile fill:#1e1e2e,stroke:#f9e2af,stroke-width:2px,color:#cdd6f4;
+    classDef system fill:#11111b,stroke:#a6e3a1,stroke-width:3px,color:#cdd6f4;
+
+    subgraph Arch_Model ["Arch Linux (AUR) Model"]
+        A1["📄 AUR Server<br/>(Hosts PKGBUILD Script)"]:::arch
+        A2["🌐 Upstream Source Code<br/>(GitHub / Tarball)"]:::arch
+        A3["⚙️ User's Machine<br/>(Compiles & Packages)"]:::compile
+        A4["🖥️ Installed Program"]:::system
+
+        A1 -->|1. Downloads script| A3
+        A2 -->|2. Downloads code| A3
+        A3 -->|3. Install package| A4
+    end
+
+    subgraph Debian_RedHat_Model ["Debian (PPA) / RedHat (COPR) Model"]
+        B1["📄 Recipe / Spec File"]:::debian
+        B2["🌐 Upstream Source Code"]:::debian
+        B3["☁️ Build Servers<br/>(Canonical/RedHat Cloud)"]:::compile
+        B4["📦 Hosted Binary Repository<br/>(.deb / .rpm)"]:::debian
+        B5["⚙️ User's Machine<br/>(Apt / DNF Download)"]:::compile
+        B6["🖥️ Installed Program"]:::system
+
+        B1 -->|1. Build trigger| B3
+        B2 -->|2. Upload code| B3
+        B3 -->|3. Compile & store| B4
+        B4 -->|4. Download binary| B5
+        B5 -->|5. Install| B6
+    end
+```
+
 ---
 
 ## 📊 Comparison Table
