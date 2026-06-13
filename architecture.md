@@ -86,4 +86,4 @@ graph TD
 ### 3. GitHub Pages & DNS
 *   **Hosting Source:** Deploys from the compiled `public/` folder directly to the `gh-pages` branch.
 *   **CNAME Mapping:** The `CNAME` file instructs GitHub to associate the build output with the custom subdomain `clojure.nurazhar.com`.
-*   **External Routing:** Your global DNS registrar routes requests for `clojure` to `nurazharSG.github.io`, pointing users to the live server.
+*   **External Routing:** Your global DNS registrar routes requests for `clojure` or `blog` to `nurazhardotcom.github.io`, pointing users to the live server.
