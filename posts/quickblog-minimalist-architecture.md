@@ -5,8 +5,6 @@ Description: An architectural breakdown of Quickblog, the minimalist static site
 
 ---
 
-# Quickblog: The Zen of Minimalist Static Site Generation
-
 When building a personal blog, modern web development defaults to overkill. Setting up dynamic frameworks (like Next.js, Remix, or MERN stacks) with backend databases, authentication layers, and real-time APIs introduces a massive maintenance burden, security attack surface, and slow page-load times.
 
 For a blog, **static HTML is the ultimate architecture**. This blog is powered by **[Quickblog](https://github.com/borkdude/quickblog)**, a lightweight static site generator designed for the Clojure/Babashka ecosystem by Michiel Borkent (@borkdude).

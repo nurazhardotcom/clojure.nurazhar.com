@@ -5,8 +5,6 @@ Description: A deep dive into bsv-clj, a Clojure toolkit built to explore Bitcoi
 
 ---
 
-# Bitcoin v0.1 Set in Stone: Building a functional blockchain toolkit in Clojure
-
 Over the last few days, I've been deep in the blockchain archives. I wanted to build a portfolio project that would let me study the core engine of peer-to-peer electronic cash without wrestling with an ever-mutating spec sheet. 
 
 I ended up building **`bsv-clj`**—a complete Clojure toolkit featuring an idiomatic JSON-RPC client, a read-only wallet tool, and a Ring/Hiccup-powered local block explorer. It connects directly to a **Bitcoin SV (BSV)** node. 

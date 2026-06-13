@@ -5,8 +5,6 @@ Description: An engineering guide to the AI-First Software Development Lifecycle
 
 ---
 
-# AI-First SDLC: Designing for High Velocity and Cognitive Vertigo
-
 If you use autonomous coding agents for more than a few hours, you will hit a wall. 
 
 It is a silent, exhausting kind of fatigue. You didn’t write a single line of boilerplate, you didn't fight compiler configurations, and you didn't search documentation. Yet, your head is throbbing, you feel dizzy, and your mental stamina is completely shot. 

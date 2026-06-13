@@ -5,8 +5,6 @@ Description: A guide on managing token quotas and optimizing LLM usage for Cloju
 
 ---
 
-# How to Maximize Clojure Usage & Minimize Token Quota on Antigravity IDE
-
 Developing Clojure applications with AI assistance introduces a unique challenge: Clojure namespaces are dense, data structures are deeply nested, and code-as-data constructs demand precise context. If you feed entire namespaces and REPL outputs to reasoning-focused LLMs without a strategy, you will burn through your token quotas (and API budget) rapidly.
 
 Here is how to optimize your developer workflow in **Antigravity IDE** using Gemini's **Thinking Budget** configurations.

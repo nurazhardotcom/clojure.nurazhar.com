@@ -5,8 +5,6 @@ Description: Welcome to my Clojure automation journal, hosted natively using Bab
 
 ---
 
-# Hello Clojure!
-
 Welcome to my new digital garden dedicated to **Clojure, Babashka, Lisp, and developer workflow automation**.
 
 I built this blog using **[Quickblog](https://github.com/borkdude/quickblog)**—a lightweight static site generator powered by **[Babashka](https://babashka.org/)**. It allows me to write posts in plain Markdown and compile them into lightning-fast, static HTML with zero overhead.

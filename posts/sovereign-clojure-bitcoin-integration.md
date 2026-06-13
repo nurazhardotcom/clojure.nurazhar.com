@@ -5,8 +5,6 @@ Description: An engineering overview of integrating Clojure with a native Bitcoi
 
 ---
 
-# Clojure & Bitcoin: Building a Sovereign Node & Integration Sandbox
-
 Lisp (specifically Clojure) and Bitcoin are a natural match. Both prioritize immutable data structures, declarative transformations, and minimal state side-effects. 
 
 In this post, we'll walk through the architectural blueprint of **[bsv-clj](https://github.com/nurazhardotcom/bsv-clj)**, a sandbox project showing how to query Bitcoin node RPCs, map spendable UTXOs from local SQLite databases, validate transaction payloads, and redact sensitive data at the edge.

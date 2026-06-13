@@ -5,8 +5,6 @@ Description: I tried building headhunter-agent as a web app. It broke. In minute
 
 ---
 
-# The Browser is Fragile: Why I Nuked My Web GUI for Native Clojure Desktop
-
 I've been building **`headhunter-agent`**—a local-first job search assistant and resume compiler—to automate my career strategy. 
 
 Initially, I tried building it as a web app. It was a fragile mess. In under ten minutes of debugging browser errors, I nuked the web files and rewrote the entire thing as a native Clojure desktop app using **`cljfx` (JavaFX)**. 
