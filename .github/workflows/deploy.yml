@@ -1,4 +1,4 @@
-name: Deploy clojure.nurazhar.com
+name: Deploy blog.nurazhar.com
 
 on:
   push:

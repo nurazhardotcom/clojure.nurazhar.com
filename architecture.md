@@ -1,4 +1,4 @@
-# clojure.nurazhar.com - System Architecture
+# blog.nurazhar.com - System Architecture
 
 This document maps out the system architecture and deployment pipeline for your Babashka-native Clojure blog.
 
@@ -28,7 +28,7 @@ graph TD
     class Local_Laptop local;
 
     %% Git Push
-    A -->|2. git push origin main| E["🐙 GitHub Repository (clojure.nurazhar.com)"]
+    A -->|2. git push origin main| E["🐙 GitHub Repository (blog.nurazhar.com)"]
     class E cloud;
 
     %% GitHub Actions
@@ -64,7 +64,7 @@ graph TD
     end
     class Readers user;
 
-    M -->|6. Requests clojure.nurazhar.com| K
+    M -->|6. Requests blog.nurazhar.com| K
     J -->|7. Serves lightning-fast HTML| M
 ```
 
@@ -73,7 +73,7 @@ graph TD
 ## ⚙️ Component Details
 
 ### 1. Local Laptop Setup
-*   **Path:** `/home/nurazhar/Documents/1_identity_&_career/clojure.nurazhar.com/`
+*   **Path:** `/home/nurazhar/Documents/1_identity_&_philosophy/blog.nurazhar.com/`
 *   **Java Runtime:** Azul Zulu 25 LTS (`25.0.3-zulu`) managed in user-space via **SDKMAN!**.
 *   **Interactive Tool:** Babashka (`bb`) runs local tasks without JVM startup overhead.
 *   **Local Preview:** Running `bb quickblog watch` mounts a live-reloading HTTP server at `http://localhost:1888` for instant local proofing.
@@ -85,5 +85,5 @@ graph TD
 
 ### 3. GitHub Pages & DNS
 *   **Hosting Source:** Deploys from the compiled `public/` folder directly to the `gh-pages` branch.
-*   **CNAME Mapping:** The `CNAME` file instructs GitHub to associate the build output with the custom subdomain `clojure.nurazhar.com`.
+*   **CNAME Mapping:** The `CNAME` file instructs GitHub to associate the build output with the custom subdomain `blog.nurazhar.com`.
 *   **External Routing:** Your global DNS registrar routes requests for `clojure` or `blog` to `nurazhardotcom.github.io`, pointing users to the live server.

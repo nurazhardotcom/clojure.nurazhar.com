@@ -1,4 +1,4 @@
-# clojure.nurazhar.com
+# blog.nurazhar.com
 
 > A lightweight, Babashka-native Clojure blog and digital garden dedicated to Lisp, shell scripting, and developer workflow automation.
 
@@ -8,7 +8,7 @@ This project is built using **[Quickblog](https://github.com/borkdude/quickblog)
 
 ## 🗺️ System Architecture
 
-The following diagram illustrates the local development and automated CI/CD pipeline deployment to GitHub Pages under the custom domain `clojure.nurazhar.com`:
+The following diagram illustrates the local development and automated CI/CD pipeline deployment to GitHub Pages under the custom domain `blog.nurazhar.com`:
 
 ```mermaid
 graph TD
@@ -32,7 +32,7 @@ graph TD
     class Local_Laptop local;
 
     %% Git Push
-    A -->|2. git push origin main| E["🐙 GitHub Repository (clojure.nurazhar.com)"]
+    A -->|2. git push origin main| E["🐙 GitHub Repository (blog.nurazhar.com)"]
     class E cloud;
 
     %% GitHub Actions
@@ -68,7 +68,7 @@ graph TD
     end
     class Readers user;
 
-    M -->|6. Requests clojure.nurazhar.com| K
+    M -->|6. Requests blog.nurazhar.com| K
     J -->|7. Serves Static Site| M
 ```
 
@@ -103,4 +103,4 @@ Deployment is fully automated using GitHub Actions (`.github/workflows/deploy.ym
 1. On every `git push` to the `main` branch, the pipeline is triggered.
 2. It sets up **Java 21** (Temurin distribution) and installs **Babashka**.
 3. Compiles the markdown posts using `bb quickblog render` into the `public/` directory.
-4. Deploys the generated output to the `gh-pages` branch using the `peaceiris/actions-gh-pages` action, configured for the custom domain `clojure.nurazhar.com`.
+4. Deploys the generated output to the `gh-pages` branch using the `peaceiris/actions-gh-pages` action, configured for the custom domain `blog.nurazhar.com`.
