@@ -9,7 +9,7 @@ Description: An engineering overview of integrating Clojure with a native Bitcoi
 
 Lisp (specifically Clojure) and Bitcoin are a natural match. Both prioritize immutable data structures, declarative transformations, and minimal state side-effects. 
 
-In this post, we'll walk through the architectural blueprint of **[bitcoin-clojure](https://github.com/nurazhardotcom/bitcoin)**, a sandbox project showing how to query Bitcoin node RPCs, map spendable UTXOs from local SQLite databases, validate transaction payloads, and redact sensitive data at the edge.
+In this post, we'll walk through the architectural blueprint of **[bsv-clj](https://github.com/nurazhardotcom/bsv-clj)**, a sandbox project showing how to query Bitcoin node RPCs, map spendable UTXOs from local SQLite databases, validate transaction payloads, and redact sensitive data at the edge.
 
 ---
 
@@ -109,4 +109,4 @@ By putting the RPC clients, local SQLite DBs, and payload validation under a Clo
 * **Hermetic Runs**: No dependency on cloud providers to run rules.
 * **Privacy**: Data stays local and is scrubbed before broadcast.
 
-You can check out the sandbox project source code on GitHub: **[github.com/nurazhardotcom/bitcoin](https://github.com/nurazhardotcom/bitcoin)**.
+You can check out the sandbox project source code on GitHub: **[github.com/nurazhardotcom/bsv-clj](https://github.com/nurazhardotcom/bsv-clj)**.
