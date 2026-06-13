@@ -1,9 +1,9 @@
 {:deps {io.github.borkdude/quickblog {:git/sha "c542bddada994ab86824bb26d60abdd76ccaa4de"}}
  :tasks {:requires ([quickblog.cli :as cli])
-         :init (def opts {:blog-title "Clojure.NurAzhar.com"
-                          :blog-description "Thoughts on Clojure, Lisp, Babashka, and system automation."
+         :init (def opts {:blog-title "blog.nurazhar.com"
+                          :blog-description "thoughts on clojure, ai-agents, security and Bitcoin (satoshi nakamoto's design)"
                           :blog-author "Nur Azhar"
-                          :blog-root "https://clojure.nurazhar.com"
+                          :blog-root "https://blog.nurazhar.com"
                           :posts-dir "posts"
                           :public-dir "public"
                           :templates-dir "templates"
